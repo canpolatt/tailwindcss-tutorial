@@ -4,11 +4,12 @@
   "description": "Portfolio page ",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css"
   },
   "author": "Can",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1"
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
   }
 }
